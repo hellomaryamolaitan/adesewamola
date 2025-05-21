@@ -1,0 +1,517 @@
+body {
+    color: skyblue;
+    background-color: #603;
+    background-color: #eee4e4;
+    color: #416541;
+    color: #000;
+    opacity: 1;
+}
+
+header {
+    width: 96%;
+    height: 28px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #eee4e4;
+}
+
+nav {
+    width: 100%;
+    height: 28px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-bottom: 4px solid #416541;
+    border-radius: 20px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    margin-left: -40px;
+    background-color: #eee4e4;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #416541;
+}
+
+ul li a:hover {
+    opacity: 70%;
+    text-decoration: underline;
+}
+
+main {
+    width: 92%;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between ;
+}
+
+.hero img {
+    width: 32%;
+    border-radius: 16px;    
+    animation: hero 3s 1;
+}
+
+@keyframes hero {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.rsvp {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    animation: rsvp 1s 1;
+}
+
+@keyframes rsvp {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.rsvp h2 {
+    width: 80%;
+    overflow: hidden;
+}
+
+.details {
+    width: 50%;
+    border-top: 4px solid #416541;
+    border-bottom: 8px solid #416541;
+    border-top-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    padding: 20px;
+}
+
+.details:hover {
+    background-color: #416541;
+    color: #eee4e4;   
+}
+
+.details span {
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.rsvp button {
+    width: 28%;
+    padding: 8px 0;
+    border: 2px solid #416541;
+    border-radius: 8px;
+    background-color: #416541;
+    color: #eee4e4;
+    font-weight: 600;
+}
+
+.rsvp button:hover {
+    background-color: #eee4e4;
+    color: #416541;
+    border: 2px dotted #416541;
+}
+
+.gallery {
+    width: 80%;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery img {
+    width: 32%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.container {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img {
+    width: 32%;
+    height: 360px;
+    border-radius: 16px;
+}
+
+.vows-container {
+    width: 64%;
+    height: max-content;
+    display: flex;
+    flex-flow: column;
+    border-left: 4px groove #000;
+    border-right: 4px groove #000;
+    border-radius: 12px;
+}
+
+.vows-container h2 {
+    text-align: center;
+}
+
+.vows {
+    height: 280px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.vows div {
+    display: flex;
+    flex-flow: column;
+}
+
+.vows div p {
+    width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.vows hr {
+    height: 80%;
+}
+
+.table {
+    width: 96%;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.table .article {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.table .one {
+    width: 36%;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    background-color: #416541;
+    color: #eee4e4;
+    border-top-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    padding-bottom: 8px;
+
+    /* background-color: #416541;
+    background-color: #496d49;
+    background-color: #5e865e;
+    background-color: #77a277; */
+}
+
+.table .one ul li {
+    list-style-type: disc;
+    width: 48%;
+    margin: 0 auto;
+}
+
+.table .one:hover {
+    background-color: #eee4e4;
+    color: #416541;
+    border: 4px double #416541;
+}
+
+.table .one h3 {
+    font-size: 24px;
+    font-style: italic;
+    font-family: cursive;
+    text-align: center;
+}
+
+.gratitude p {
+    font-style: italic;
+}
+
+footer {
+    width: 92%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+    font-family: cursive;
+    color: #416541;
+    border: 2px double #416541;
+    border-radius: 16px; 
+    padding: 4px 20px;
+    animation: footer 8s infinite;
+}
+
+@keyframes footer {
+   0% {
+    opacity: 10%;
+   }
+   100% {
+    opacity: 100%;
+    transform: scale(1.15);
+   }
+}
+
+.gallery, .container, .table, .gratitude, footer {
+    margin-top: 72px;
+}
+
+
+@media screen and (max-width: 921px) {
+    body {
+        opacity: 1;
+    }
+
+    .hero {
+        width: 100%;
+        height: max-content;
+        flex-flow: column;
+    }
+
+    .hero img {
+        width: 92%;
+        height: 60vh;
+        margin: 0 auto;
+        animation: hero 4s 1;
+    }
+
+    @keyframes hero {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .rsvp {
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        animation: none;
+    }
+
+    .rsvp div {
+        margin-bottom: 20px;
+    }
+
+    .rsvp h2 {
+        width: 100%;
+        animation: welcome 4s;
+    }
+
+    @keyframes welcome {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .details {
+        width: 96%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .details span {
+        font-weight: 600;
+        margin-right: 12px;
+    }
+
+    .rsvp button {
+        width: 32%;
+        margin-left: 20px;
+    }
+
+    .gallery {
+        width: 100%;
+        height: max-content;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 80%;
+        height: 80%;
+        margin-bottom: 8px;
+    }
+
+    .container {
+        flex-flow: column;
+    }
+
+    .container img {
+        width: 88%;
+        margin: 0 auto;
+        margin-bottom: 4px;
+        height: 200px;
+        border-radius: 40px;
+    }
+
+    .vows-container {
+        width: 100%;
+    }
+
+    .vows div p {
+        width: 80%;
+        padding-bottom: 24px;
+        margin: 0 auto;
+        font-style: italic;
+    }
+
+    .table {
+        width: 96%;
+        height: fit-content;
+        margin: 0 auto;
+        flex-flow: column;
+    }
+
+    .table .article {
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    .table .one {
+        width: 92%;
+        height: max-content;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .table .one h3 {
+        font-size: 16px;
+    }
+
+    .table .one ul li {
+        font-size: 12px;
+    }
+
+    .gallery, .table, .container, .thanks {
+        margin-top: 56px;
+    }
+}
+
+@media screen and (width: 912px) {
+    .container img {
+        width: 56%;
+    }
+}
+
+@media screen and (width: 800px) {
+    .container img {
+        width: 56%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rsvp {
+    width: 92%;
+    }
+
+    .rsvp h2 {
+        width: 100%;
+    }
+
+    .details {
+        width: 88%;
+    }
+
+    .details {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 620px) {
+   .container img {
+        height: 264px;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    header {
+        height: 40px;
+    }
+
+    p, a {
+        font-size: 12px;
+    }
+
+    .hero img {
+        height: 80%;
+    }
+
+    .rsvp h2 {
+        font-size: 20px;
+    }
+
+      .rsvp button {
+        margin-left: 0;
+    }
+
+     .container img {
+        height: 188px;
+    }
+}
+
