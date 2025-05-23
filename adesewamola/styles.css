@@ -313,7 +313,7 @@ footer p {
 
 @media screen and (max-width: 921px) {
     body {
-        opacity: 1;
+        opacity: 0;
     }
 
     .hero {
